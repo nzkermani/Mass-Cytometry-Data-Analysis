@@ -2,17 +2,23 @@
 Data science tools for analysis mass cytometry by time of flight (CyToF)
 Cytometry is measurement of cell characteristics.Features that can be measured by cytometric methods are cell morphology (shape/structure), cell count, DNA content, presence or obsence of a protein on a cell surgace or cell cytoplasm. 
 
-Mass cytometry enables the measurement of up to 100 features on single cell. 
-The Cytometry by Time Of Flight (CyTOF) mass cytometer is an adaptation of an inductively coupled plasma mass spectrometer (ICP-MS) modified for high-dimensional cytometric applications.
-
 For a Mass cytometry experiment, cells are stained with antibodies, and metal isotopes are employed as reporter groups. Staining panels of 35 or more antibodies are designed to quantify cell surface phenotypes, cell cycle state, apoptosis, metabolism, proliferation, and activation states of intracellular signaling pathways, as depicted in figure below:
 
 ![image](https://user-images.githubusercontent.com/10026216/137164031-819c2756-4b7c-4926-a822-cf074f11613f.png)
 Figure is taken from [1].
 
-Mass cytometry is a mass spectrometry technique based on inductively coupled plasma mass spectrometry and time of flight mass spectrometry used for the determination of the properties of cells (cytometry).
-In this approach, cells of interest are cross-linked by formaldehyde, permeabilized using methanol or detergents, and labeled with antibodies conjugated to pure metal isotopes of defined mass. Subsequently, cells are nebulized, ionized and atomized in a ∼7000 K hot plasma and introduced into the mass cytometer, which is a hybrid quadrupole-time-of-flight mass spectrometer. Here, the composition and quantity of the reporter (metal) isotopes are determined. Signals corresponding to each isotope are then correlated with presence of the respective marker per single-cell event.
 
+CyTOF (Fluidigm), is a variation of flow cytometry in which antibodies are labeled with heavy metal ion tags rather than fluorochromes.  Readout is by time-of-flight mass spectrometry.  This allows for the combination of many more antibody specificities in a single samples, without significant spillover between channels.  
+
+There are standardized panels for  immunophenotyping, phenotyping+intracellular cytokine staining (ICS), and phenotyping+phospho-CyTOF, each with 30 to 38  antibodies.   
+
+Immunophenotyping:  A number of (30-50) antibody CyTOF immunophenotyping panel is designed for use with cryopreserved PBMC, though it could be adapted for other sample types.  A limited number of additional antibodies can be added to open channels, subject to availability.
+
+Intracellular cytokines:  the (30-50) antibody CyTOF ICS panel is aimed primarily at dissection of T cell responses.  Limited substitutions are possible (with common ones as listed).
+
+Phospho-CyTOF:  the (30-50) antibody phospho-CyTOF panel can be used with the indicated stimuli to read out a broad array of signaling pathways in many different cell subsets.  Additions or substitutions in this panel are more difficult, due to the requirement for surface marker antibodies to work well on fixed epitopes.
+
+There is a list of standard antibodies in these three CyTOF panels here. 
 
 Fluidigm Corporation is currently the only vendor of mass cytometry instruments with their CyTOF systems. The first CyTOF was released in 2009, followed by the CyTOF2® in 2013, and most recently the Helios™ in 2015. 
 ![image](https://user-images.githubusercontent.com/10026216/137162678-bf8cedb2-aa76-484b-9d42-9970e7a3a264.png)
